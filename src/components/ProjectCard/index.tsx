@@ -3,9 +3,15 @@ type projectCardProps = {
   title: string;
   description: string;
   skills: string[];
+  link: string;
 };
 
-const ProjectCard = ({ title, description, skills }: projectCardProps) => {
+const ProjectCard = ({
+  title,
+  description,
+  skills,
+  link,
+}: projectCardProps) => {
   return (
     <div className=" p-2 shadow-xl grid flex-grow card bg-base-300 w-80 rounded-box">
       <div className="card-body">
@@ -22,9 +28,13 @@ const ProjectCard = ({ title, description, skills }: projectCardProps) => {
         </div>
 
         <div className="card-actions ">
-          <button className="btn bg-green-400 w-full text-white hover:text-black">
+          <a
+            href={link}
+            target="_blank"
+            className="btn bg-green-400 w-full text-white hover:text-black"
+          >
             Learn More
-          </button>
+          </a>
         </div>
       </div>
     </div>

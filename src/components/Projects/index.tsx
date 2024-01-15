@@ -21,6 +21,7 @@ const Projects = ({ setSelectedPage }: componentsProp) => {
               title={project.title}
               description={project.description}
               skills={project.skills}
+              link={project.link}
             />
           );
         })}

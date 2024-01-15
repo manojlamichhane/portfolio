@@ -16,7 +16,7 @@ export const experience = [
     title: "Associate Software Engineer",
     subtitle: "Deerhold Ltd, Nepal",
     time: "2020-2021",
-    description: "UI developer, React JS ",
+    description: "Frontend developer, React JS ",
     icon: MdWork,
   },
 ];
